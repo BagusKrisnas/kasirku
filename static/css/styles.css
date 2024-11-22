@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Style */
+  body {
+    font-family: 'Manrope', sans-serif;
+    background-color: #e6ffe6; /* Light green background */
+  }
+
+  .spalash {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6ffe6;
+    z-index: 200;
+    color: #000;
+    text-align: center;
+    line-height: 90vh;
+  }
+
+  .spalash.display-none {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #e6ffe6;
+    z-index: -10;
+    color: #000;
+    text-align: center;
+    line-height: 90vh;
+    transition: all 1s;
+  }
+
+  @keyframes fadeIn {
+    to{
+      opacity: 1;
+    }
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 20px auto; /* Center the navbar */
+    border-radius: 40px; /* Rounded corners */
+    border: 2px solid black; /* Black border */
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 5px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 5px;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a span {
+    margin-left: 5px;
+    font-size: 12px; /* Dropdown icon size */
+  }
+  
+  .nav-links a:hover {
+    color: #00bcd4; /* Highlight color on hover */
+  }
+  
+  /* Login Button */
+  .login-button {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #444; /* Darker shade of black */
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-wrap: wrap;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .login-button {
+      margin-top: 10px;
+    }
+  }
+  
