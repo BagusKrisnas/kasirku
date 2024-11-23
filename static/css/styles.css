@@ -105,12 +105,14 @@
   
   /* Login Button */
   .login-button {
+    display: flex;
     text-decoration: none;
     color: white;
     background-color: black;
     padding: 8px 20px;
-    border-radius: 20px;
+    border-radius: 40px;
     font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
   
@@ -161,8 +163,8 @@
   .cta-button{
     padding: 12px 30px;
     display: inline-block;
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: #d5f9dd;
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
@@ -182,19 +184,13 @@
     margin-bottom: 40px;
   }
 
-  .partner{
+  .partner-with{
     position: absolute;
     bottom: 0;
     width: 100%;
     background-color: #fff;
     padding: 20px 0;
     text-align: center;
-  }
-
-  .partner h2{
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
   }
 
   .partner-logos{
@@ -207,11 +203,53 @@
     max-width: 50px;
     height: auto;
     max-width: 500px;
+
   }
 
   .header-image{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+  }
+
+  /* Divider Line */
+.section-divider {
+  border: 0;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  margin: 20px 0;
+}
+
+
+  #about{
+    background-color: #fff;
+    padding: 60px 20px;
+  }
+
+  .about-container{
+    display: flex;
+    align-items: center;
+    gap : 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .green-square{
+    background-color: #d5f9dd;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 16px;
   }
   
