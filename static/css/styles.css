@@ -69,34 +69,79 @@
   .logo a {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
   }
+
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
   
   .nav-links {
     display: flex;
     list-style: none;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
   }
   
   .nav-links li {
-    margin: 0 15px;
+    margin: 0 0.9375rem;
   }
   
   .nav-links a {
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.125rem;
     display: flex;
     align-items: center;
   }
+
+  .nav-links li{
+    position: relative;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown-menu li {
+    padding: 5px 20px;
+  }
+
+  .dropdown-menu li a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #d4f8d4;
+    border-radius: 5px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
   
   .nav-links a span {
-    margin-left: 5px;
-    font-size: 12px; /* Dropdown icon size */
+    margin-left: 0.3125rem;
+    font-size: 0.75rem; /* Dropdown icon size */
   }
   
   .nav-links a:hover {
@@ -109,10 +154,10 @@
     text-decoration: none;
     color: white;
     background-color: black;
-    padding: 8px 20px;
-    border-radius: 40px;
+    padding: 0.5rem 1.25rem;
+    border-radius: 2.5rem;
     font-weight: bold;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
   }
   
@@ -142,6 +187,7 @@
     align-items: center;
     padding: 40px;
     background-color: #fff;
+    border: 2px solid black;
   }
 
   .header-content{
@@ -150,14 +196,14 @@
   }
 
   .header-content h1{
-    font-size: 36px;
+    font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
   }
 
   .header-content p{
-    font-size: 18px;
-    margin: 20px 0;
+    font-size: 1rem;
+    margin: 15px;
   }
 
   .cta-button{
@@ -212,19 +258,11 @@
     border-radius: 8px;
   }
 
-  /* Divider Line */
-.section-divider {
-  border: 0;
-  height: 2px;
-  background-color: #000;
-  width: 100%;
-  margin: 20px 0;
-}
-
 
   #about{
     background-color: #fff;
     padding: 60px 20px;
+    
   }
 
   .about-container{
