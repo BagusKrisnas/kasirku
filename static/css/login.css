@@ -1,10 +1,16 @@
 /* ===== Login Page Styles ===== */
 
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
 .background-image{
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("./images/latarmasuk.png") no-repeat center center fixed;
+  /* background-image: url('static/image/latarmasuk.png'); */
 }
 
 
@@ -15,8 +21,8 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4); /* Transparent overlay */
-  -webkit-backdrop-filter: blur(10px); /* Add this line */
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(10px); 
   backdrop-filter: blur(10px);
   border-radius: 16px;
   max-width: 500px;
@@ -67,6 +73,17 @@
 
 .password-container {
   position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.password-container input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 .password-container .toggle-password {
@@ -77,6 +94,17 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
+}
+
+.password-container .toggle-password:hover {
+  opacity: 1;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .checkbox-group {
@@ -100,12 +128,24 @@
   text-decoration: underline;
 }
 
-.login-btn {
+.forgot-password {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #333 ;
+}
+
+.login-button {
   width: 100%;
   padding: 10px;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #00bcd4;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -113,8 +153,8 @@
   transition: background-color 0.3s ease;
 }
 
-.login-btn:hover {
-  background-color: #008c9e;
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .or-section {
