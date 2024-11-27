@@ -300,7 +300,7 @@
     background-color: #d5f9dd;
     border: 2px solid black;
     width: 400px;
-    height: 600px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -444,3 +444,248 @@
   }
 }
 
+#busines-solution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  border-bottom: 2px solid black;
+  background-color: #ffffff;
+  margin-bottom: 2rem;
+  border-bottom: #000000;
+}
+
+#business-solution {
+  padding-left: 80px; /* Pushes the text content inside the container to the right */
+}
+
+.business-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+}
+
+.business-text{
+  flex: 1;
+  text-align: left;
+}
+.business-text h2{
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.business-text ul{
+  list-style: none;
+  padding: 0;
+}
+
+.business-text li{
+  margin-bottom: 10px;
+}
+
+.business-text a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  border-bottom: 2px solid #000;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.business-text a:hover{
+  color: #444;
+  border-bottom-color: #444;
+}
+
+.image-container{
+  position: relative;
+  background-color: #d8f3dc;
+  padding: 20px;
+  width: 400px;
+  height: 600px;
+  padding-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  display: fit-content;
+}
+
+.image-container img{
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .business-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .business-text, .business-image {
+    text-align: center;
+  }
+}
+
+#client-reviews {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-top: 2px solid black;
+}
+
+#client-reviews h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #ffe5cc;
+  border: 2px solid #000000;
+  border-radius: 15px;
+  padding: 1.5rem;
+  max-width: 300px;
+  text-align: left;
+  position: relative;
+}
+
+.review-card .quote-icon {
+  font-size: 2rem;
+  color: #d684c2;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.review-card p {
+  margin: 2rem 0 1.5rem;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.client-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+
+.client-info div {
+  font-size: 0.9rem;
+}
+
+.client-info strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.client-info small {
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 60px 20px;
+  border-top: 2px solid black;
+}
+
+#demo img{
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+}
+
+.demo h1{
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.demo-button{
+  display: absolute;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2.5rem;
+    font-weight: bold;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.demo-button{
+  margin-bottom: 1.5rem !important;
+}
+
+.demo-button:hover{
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  #demo {
+    flex-direction: column;
+  }
+}
+
+#faq-section{
+  display: flex;
+  padding: 60px 20px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.faq-image-container{
+  position: relative;
+  background-color: #dee8f2;
+  width: 100%;
+  height: 50vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.faq-image-container img{
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
