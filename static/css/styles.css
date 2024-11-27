@@ -684,8 +684,100 @@
   padding: 0;
 }
 
+.faq-image-container{
+  flex: 1;
+  display: fit-content;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  width: 400ox;
+  height: 600px;
+  padding-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+
+}
+
 .faq-image-container img{
   max-width: 100%;
   height: auto;
   padding: 20px;
 }
+
+/* FAQ Section Styling */
+.faq-section {
+  background-color: #f9cdd0; /* Light pink background */
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
+  max-width: 600px;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
+  max-width: 600px; /* Limit the width of each FAQ item */
+  margin-left: auto; /* Center-align the FAQ item */
+  margin-right: auto;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  color: #000;
+}
+
+.faq-question:hover {
+  color: #333;
+}
+
+/* Arrow Styling */
+.faq-arrow {
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg); /* Arrow rotates when active */
+}
+
+/* Answer Styling */
+.faq-answer {
+  display: none;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+/* Show Answer */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
