@@ -274,7 +274,6 @@
 
   #about{
     background-color: #fff;
-    padding: 60px 20px;
     border-bottom: 2px solid black;
     
   }
@@ -298,7 +297,8 @@
 
   .green-square{
     background-color: #d5f9dd;
-    border: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     width: 400px;
     height: 800px;
     display: flex;
@@ -662,7 +662,6 @@
 
 #faq-section{
   display: flex;
-  padding: 60px 20px;
   justify-content: center;
   background-color: #ffffff;
   border-top: 2px solid black;
@@ -779,5 +778,158 @@
 /* Show Answer */
 .faq-item.active .faq-answer {
   display: block;
+}
+
+#membership {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-top: 2px solid #000; /* Optional: Adjust to match your website's theme */
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership-text {
+  color: #000; /* Black text */
+}
+
+.membership-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.membership-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.masuk-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.masuk-button:hover {
+  background-color: #333;
+}
+
+.membership-image-container{
+  background-color: #dee8f2;
+  padding: 2rem;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership-imag-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer {
+  background-color: #d9f6dc; /* Light green background */
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-links div {
+  min-width: 150px;
+}
+
+.footer-links h4 {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-app {
+  text-align: right;
+}
+
+.footer-app p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.footer-app-icons img {
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-bottom-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-bottom-links li {
+  font-size: 0.8rem;
+}
+
+.footer-social-icons i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+.footer-social-icons i:last-child {
+  margin-right: 0;
 }
 
